@@ -939,8 +939,8 @@ namespace AssetStoreTools.Validator
             if (obj is ComputeShader)
                 return ShaderUtil.GetComputeShaderMessageCount(obj as ComputeShader) > 0;
 
-            if (obj is UnityEngine.Experimental.Rendering.RayTracingShader)
-                return ShaderUtil.GetRayTracingShaderMessageCount(obj as UnityEngine.Experimental.Rendering.RayTracingShader) > 0;
+            if (obj is UnityEngine.Rendering.RayTracingShader)
+                return ShaderUtil.GetRayTracingShaderMessageCount(obj as UnityEngine.Rendering.RayTracingShader) > 0;
 
             return false;
         }

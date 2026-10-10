@@ -289,7 +289,7 @@ namespace AssetStoreTools.Uploader
 
                 // Wait until the texture is no longer loading
                 // IMPORTANT: AssetPreview.IsLoadingPreview currently never returns true in 2020.3 and 2021.3 (Issue 1323729)
-                while (AssetPreview.IsLoadingAssetPreview(kvp.Value.GetInstanceID()))
+                while (AssetPreview.IsLoadingAssetPreview(kvp.Value.GetEntityId()))
                 {
                     // 2019.4: AssetPreview.IsLoadingAssetPreview value only changes after invoking the getter method
                     if (AssetPreview.GetAssetPreview(kvp.Value))
